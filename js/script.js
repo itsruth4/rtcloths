@@ -25,7 +25,15 @@ const products = {
             colors: ['black']
         }
     ],
-    hoodies: []  // We'll add hoodies when you have the images
+    hoodies: [
+        {
+            id: 'h1',
+            name: 'Premium Black Hoodie',
+            price: 1299,
+            image: 'images/hoodies/h1.jpg',
+            colors: ['black', 'gray']
+        }
+    ]
 };
 
 // Make sure DOM is loaded before displaying products
