@@ -877,10 +877,18 @@ footer {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: flex; /* Show links on mobile */
-        flex-direction: column;
+        display: none; /* Hide links initially */
+        flex-direction: row; /* Change to row for horizontal display */
     }
-    
+
+    .navbar.active .nav-links {
+        display: flex; /* Show links when navbar is active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show a button to toggle the menu */
+    }
+
     .slide {
         flex-direction: column;
     }
@@ -2063,7 +2071,7 @@ footer {
 
 .modal-content {
     position: relative;
-    background: white;
+    background-color: white;
     margin: 10% auto;
     padding: 30px;
     width: 90%;
@@ -2380,7 +2388,7 @@ footer {
 
     .nav-links {
         display: flex; /* Show links on mobile */
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .navbar.active .nav-links {

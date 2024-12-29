@@ -483,5 +483,5 @@ document.addEventListener('keydown', function(e) {
 // Toggle mobile menu
 function toggleMenu() {
     const navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('active');
+    navbar.classList.toggle('active'); // Toggle the active class
 }
