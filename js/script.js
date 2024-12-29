@@ -6,7 +6,7 @@ const products = {
             name: 'Classic White T-Shirt',
             price: 599,
             image: 'images/tshirts/t1.jpg',
-            colors: ['white', 'black', 'gray']
+            colors: ['white', 'gray']
 
         },
         {
