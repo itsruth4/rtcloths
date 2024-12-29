@@ -1,0 +1,24 @@
+name: Auto Sync
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - name: Push changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto sync changes"
+          git push

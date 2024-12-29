@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTCloth - Premium Fashion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">RTCloth</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#products">Shop</a>
+            <a href="cart.html" class="cart-menu-item" onclick="window.location.href='cart.html'; return false;"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-slider">
+        <div class="slide active">
+            <div class="slide-content">
+                <h1>Discover Timeless Elegance</h1>
+                <p>Experience premium quality clothing crafted with attention to detail and style. Our collection embodies sophistication and comfort.</p>
+                <a href="#products" class="cta-button">Shop Collection</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Fashion Model" class="slide-image">
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+                <h1>Premium Essentials</h1>
+                <p>Elevate your wardrobe with our carefully curated selection of premium essentials. Each piece is designed to make a statement.</p>
+                <a href="#products" class="cta-button">Explore Now</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Fashion Collection" class="slide-image">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2 class="section-title">Collections</h2>
+        
+        <!-- T-Shirts Collection -->
+        <div class="collection">
+            <h3 class="collection-title">T-Shirts</h3>
+            <div class="product-grid" id="tshirtGrid">
+                <!-- T-shirts will be added here -->
+            </div>
+        </div>
+
+        <!-- Hoodies Collection -->
+        <div class="collection">
+            <h3 class="collection-title">Hoodies</h3>
+            <div class="product-grid" id="hoodieGrid">
+                <!-- Hoodies will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Stay updated with our latest collections and exclusive offers.</p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+            <button type="submit" class="newsletter-button">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About RTCloth</h3>
+                <p>Premium clothing brand dedicated to bringing you timeless elegance and contemporary style. Our pieces are crafted with the finest materials and attention to detail.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <a href="#">Shipping Information</a>
+                <a href="#">Returns & Exchanges</a>
+                <a href="#">Size Guide</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Follow us on social media for the latest updates and style inspiration.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RTCloth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
