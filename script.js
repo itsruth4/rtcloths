@@ -43,7 +43,7 @@ const products = {
             name: 'Premium Zip-Up Hoodie',
             price: 1499,
             image: 'https://via.placeholder.com/300x400?text=Zip-Up+Hoodie',
-            colors: ['black', 'charcoal']
+            colors: ['black', 'orange']
         },
         {
             id: 'h3',

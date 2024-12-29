@@ -32,6 +32,13 @@ const products = {
             price: 1299,
             image: 'images/hoodies/h1.jpg',
             colors: ['black', 'gray']
+        },
+        {
+            id: 'h2',
+            name: 'Classic Gray Hoodie',
+            price: 1399,
+            image: 'images/hoodies/h2.jpg',
+            colors: ['gray', 'blue']
         }
     ]
 };
@@ -472,3 +479,9 @@ document.addEventListener('keydown', function(e) {
         closeImageModal();
     }
 });
+
+// Toggle mobile menu
+function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+}

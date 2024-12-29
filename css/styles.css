@@ -1501,10 +1501,9 @@ footer {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
     font-size: 16px;
     margin-top: 15px;
+    width: 100%;
 }
 
 .secondary-button {
@@ -1514,9 +1513,9 @@ footer {
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
     font-size: 16px;
     margin-top: 15px;
+    width: 100%;
 }
 
 .checkout-navigation {
@@ -2370,4 +2369,29 @@ footer {
         font-size: 1em;
         padding: 8px 0;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
 }
